@@ -1,0 +1,168 @@
+
+.yaffry-component {
+    width: 100%;
+    /* height: 100vh; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 7rem 0;
+}
+
+.logo-container {
+    width: 306.83px;
+    height: 335.22px;
+    transform: scale(.85);
+}
+
+.welcome-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 4.5em;
+    }
+
+    h3 {
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+.clr-primary {
+    color: cyan;
+}
+
+.clr-secondary {
+    color: magenta;
+}
+
+.divider {
+    margin: 1.5rem;
+    border: none;
+    height: 1px;
+    background: cyan;
+    width: 100%;
+
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20%;
+        width: 50%;
+        height: 100%;
+
+        filter: drop-shadow(0 0 4px rgba(0, 255, 255, 1)) drop-shadow(0 0 10px rgba(255, 0, 255, 1));
+        
+        background: linear-gradient(
+            to right,
+            transparent,
+            /* rgba(255, 255, 255, 0.8), */
+            rgba(255, 0, 255, 1),
+            transparent
+        );
+
+        animation: sweep 5.5s ease-in-out infinite;
+        pointer-events: none;
+    }
+}
+
+@keyframes sweep {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+/* @keyframes sweep {
+    0% {
+        left: -50%;
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    80% {
+        left: 120%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+} */
+
+.starting {
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+svg {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.cls-1 {
+    fill: none;
+    /* fill: url(#neon-gradient); */
+    stroke: url(#neon-gradient);
+    stroke-width: 5;
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 5000;
+    animation: draw 4s ease-in-out forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Pulsierender Glow */
+.glow {
+    fill: none;
+    stroke: url(#neon-gradient);
+    stroke-width: 5;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    animation: pulse-glow 0.9s infinite alternate;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes pulse-glow {
+    0% {
+        filter: drop-shadow(0 0 2px rgba(0, 255, 255, 0.2)) drop-shadow(0 0 6px rgba(255, 0, 255, 0.2));
+    }
+    
+    100% {
+        filter: drop-shadow(0 0 4px rgba(0, 255, 255, 1)) drop-shadow(0 0 10px rgba(255, 0, 255, 1));
+    }
+}

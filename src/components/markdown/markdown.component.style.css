@@ -1,0 +1,129 @@
+/* styles for markdown */
+
+.code-container {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 16px;
+    /* width: 45%; */
+    max-width: 900px;
+    min-width: 300px;
+    margin: 2rem auto;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.window-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.window-controls {
+    display: flex;
+    gap: 6px;
+    margin-right: 12px;
+}
+
+.control {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.close {
+    background: #f87171;
+}
+
+.minimize {
+    background: #facc15;
+}
+
+.maximize {
+    background: #4ade80;
+}
+
+.window-title {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.language-badge {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: #334155;
+    color: #94a3b8;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid #475569;
+}
+
+.code-field {
+    background-color: #233045;
+    border-radius: .25rem;
+    padding: .75rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Mini Syntax Highlighting */
+.comment {
+    color: #6b7280;
+}
+
+.keyword {
+    color: #60a5fa;
+}
+
+.string {
+    color: #34d399;
+}
+
+.function, .class {
+    color: #f87171;
+}
+
+.parenthesis {
+    color: #f8ed71;
+}
+
+.brackets {
+    color: #71f1f8;
+}
+
+.braces {
+    color: #f871f6;
+}
+
+.markdown-heading-1 {
+    color: #1298ff;
+    font-weight: bold;
+}
+
+.markdown-heading-2 {
+    color: #34d399;
+    font-weight: bold;
+}
+
+.markdown-code-snippet {
+    background-color: #1e293b;
+    color: #e4701dda;
+    border: 1px solid #3c58d4;
+    border-radius: 0.25rem;
+}
+
+.markdown-bold {
+    color: #1298ff;
+    font-weight: bold;
+}
+
+.markdown-link {
+    color: #f97316;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

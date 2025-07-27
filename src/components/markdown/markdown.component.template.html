@@ -1,0 +1,121 @@
+<div class="code-container">
+    <div class="window-header">
+        <div class="window-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+        </div>
+        <div class="window-title">README.md</div>
+    </div>
+
+    <div class="language-badge">Markdown</div>
+
+    <pre class="code-field">
+<span class="markdown-heading-1"># Willkommen bei Yaffry 🚀</span>
+
+<span class="markdown-bold">**Yaffry**</span> ist dein leichtgewichtiges, komponentenbasiertes Framework für moderne Web-Apps
+– inspiriert von Angular, React & Vue, aber mit eigenem Twist!
+
+---
+
+<span class="markdown-heading-2">## Quickstart</span>
+
+- <span class="markdown-bold">**Entwicklungsserver starten:**</span>
+  ```bash
+  <span class="markdown-code-snippet">npm run dev</span>
+  ```
+- <span class="markdown-bold">**Build für Produktion:**</span>
+  ```bash
+  <span class="markdown-code-snippet">npm run build</span>
+  ```
+- <span class="markdown-bold">**Neue Komponente anlegen:**</span> 
+  ```bash
+  <span class="markdown-code-snippet">npx yaff create component MyAwesomeOne</span>
+  ```
+- <span class="markdown-bold">**Neuen Service anlegen:**</span>
+  ```bash
+  <span class="markdown-code-snippet">npx yaff create service MyFancyOne</span>
+  ```
+
+---
+
+<span class="markdown-heading-2">## Projektstruktur</span>
+
+- <span class="markdown-bold">**src/components/**</span> – Deine Komponenten (jede im eigenen Ordner)
+- <span class="markdown-bold">**src/services/**</span>   – Globale Services (z.B. für State, API)
+- <span class="markdown-bold">**src/routes/**</span>     – Routen-Definitionen
+- <span class="markdown-bold">**public/**</span>         – Statische Assets (Bilder, Icons, ...)
+- <span class="markdown-bold">**scripts/yaff.js**</span> – CLI für Komponenten/Services
+
+---
+
+<span class="markdown-heading-2">## Komponenten</span>
+
+- Jede Komponente besteht aus:
+  - <span class="markdown-code-snippet">`.component.ts`</span> (Klasse mit Decorator)
+  - <span class="markdown-code-snippet">`.component.template.html`</span> (Template)
+  - <span class="markdown-code-snippet">`.component.style.css`</span> (Styles)
+- Beispiel:
+  ```ts
+  <span class="keyword">@YComponent</span><span class="parenthesis">(</span><span class="braces">{</span>
+    selector: <span class="string">'my-comp'</span>,
+    templateUrl: <span class="string">'./my-comp.component.template.html'</span>,
+    styleUrls: <span class="brackets">[</span><span class="string">'./my-comp.component.style.css'</span><span class="brackets">]</span>
+  <span class="braces">}</span><span class="parenthesis">)</span>
+  <span class="keyword">export class</span> <span class="class">MyCompComponent</span> <span class="keyword">extends</span> <span class="class">Component</span> <span class="braces">{</span> ... <span class="braces">}</span>
+  ```
+
+---
+
+<span class="markdown-heading-2">## Services</span>
+
+- Schreibe globale Logik/State in Services.
+- Beispiel:
+  ```ts
+  <span class="keyword">export class</span> <span class="class">CounterService</span> <span class="keyword">extends</span> <span class="class">Service</span> <span class="braces">{</span> ... <span class="braces">}</span>
+  <span class="keyword">export const</span> counterService = <span class="class">ReactiveSystem</span>.makeReactive<span class="parenthesis">(</span><span class="keyword">new</span> <span class="class">CounterService</span>()<span class="parenthesis">)</span>;
+  ```
+
+---
+
+<span class="markdown-heading-2">## Routing</span>
+
+- Definiere Routen in <span class="markdown-code-snippet">`src/routes/routes.config.ts`</span>
+- Nutze <span class="markdown-code-snippet">`&lt;router-outlet&gt;&lt;/router-outlet&gt;`</span> im Template
+
+---
+
+<span class="markdown-heading-2">## Tipps</span>
+
+- <span class="markdown-bold">**Live-Reload:**</span> Änderungen an Komponenten werden sofort übernommen.
+- <span class="markdown-bold">**Eigene Pipes/Directives:**</span> Siehe Framework-API.
+- <span class="markdown-bold">**Lifecycle-Hooks:**</span> <span class="markdown-code-snippet">`onInit`</span>, <span class="markdown-code-snippet">`onUpdate`</span>, <span class="markdown-code-snippet">`onDestroy`</span> in Komponenten nutzen.
+- <span class="markdown-bold">**Styles:**</span> Component-Styles werden automatisch geladen (siehe Import in <span class="markdown-code-snippet">`.component.ts`</span>).
+
+---
+
+<span class="markdown-heading-2">## Nützliche Befehle</span>
+
+- <span class="markdown-code-snippet">`npm run dev`</span> – Entwicklungsserver starten
+- <span class="markdown-code-snippet">`npx yaff create component &lt;Name&gt;`</span> – Neue Komponente 
+- <span class="markdown-code-snippet">`npx yaff create service &lt;Name&gt;`</span> – Neuer Service
+
+---
+
+<span class="markdown-heading-2">## Mehr erfahren</span>
+
+- [Yaffry GitHub](<a href="#" class="markdown-link">https://github.com/philthy-phil/yaffry</a>)  
+- [README im Projekt](<a href="#" class="markdown-link">./README.md</a>)  
+- [Framework-API](<a href="#" class="markdown-link">./docs/</a>)
+
+---
+
+<span class="markdown-bold">**Viel Spaß beim Entwickeln mit Yaffry! 🎉**</span>
+
+<!-- <span class="comment">// TODO: Add README Documentation here!</span> -->
+<!-- <span class="keyword">function</span> <span class="function">greet</span>(name) {
+    <span class="keyword">const </span>greeting = <span class="parenthesis">()</span> => <span class="string">"Hello, "</span> + name;
+    console.log<span class="parenthesis">(</span><span class="string">"Hello, "</span> + name<span class="parenthesis">)</span>;
+} -->
+  </pre>
+</div>
