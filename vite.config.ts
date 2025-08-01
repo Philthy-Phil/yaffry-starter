@@ -33,7 +33,7 @@ export default defineConfig({
     force: true
   },
   build: {
-    outDir: '../dist-example',
+    outDir: 'dist',
     emptyOutDir: true,
     commonjsOptions: {
       include: [/yaffry/]
