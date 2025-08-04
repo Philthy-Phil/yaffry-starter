@@ -1,0 +1,63 @@
+<div class="democomp1-demo">
+  <h2>Demo Component 1</h2>
+
+  <hr>
+  
+  <div>
+    <p>Local Count</p>
+    <button y-click="decrement">-</button>
+    <button y-click="increment">+</button>
+    <span>({{ count }})</span>
+  </div>
+  
+  <hr>
+
+  <div y-if="count > 0" class="visible-success">
+    Counter is greater than 0!
+    <hr>
+  </div>
+
+  <div y-if="count < 0" class="visible-danger">
+    Counter is less than 0!
+    <hr>
+  </div>
+
+  <div>
+    <p>Global Count | ServiceCounter</p>
+    <button y-click="useServiceDec">-</button>
+    <button y-click="useServiceInc">+</button>
+    <span>({{ counterService.count }})</span>
+  </div>
+  
+  <hr>
+
+  <div>
+    <input type="text" y-model="inputValue" placeholder="New item" />
+    <button y-click="addItem">Add Item</button>
+    
+    <div>
+      <ul>
+        <li y-if="items.length === 0">
+          No items available.
+        </li>
+        <li y-for="item in items">
+          {{ $index }}: {{ item | uppercase }}
+          <button y-click="removeItem($index)">Remove</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+  
+  <div>
+    <button y-click="toggleShow">Toggle Show</button>
+    <div y-show="show">Das ist sichtbar, wenn show=true!</div>
+  </div>
+    
+  <hr>
+
+  <button y-link="/democomp2">To Demo-Page-2</button>
+  <button y-link="/">Back Home</button>
+
+</div>

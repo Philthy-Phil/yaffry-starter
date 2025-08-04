@@ -1,0 +1,62 @@
+/* styles for fancy */
+.democomp1-demo {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 420px;
+  box-shadow: 0 2px 12px #0001;
+  font-family: system-ui, sans-serif;
+  color: black;
+}
+
+.democomp1-demo h2 {
+  margin-top: 0;
+  color: black;
+  text-align: center;
+}
+
+.democomp1-demo button {
+  background: cyan;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.democomp1-demo button:hover {
+  background: black;
+  color: cyan;
+}
+
+.democomp1-demo input[type="text"] {
+  padding: 0.4rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  width: 60%;
+}
+
+.democomp1-demo ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.democomp1-demo li {
+  margin-bottom: 0.2rem;
+  color: black;
+}
+
+.democomp1-demo .visible-success {
+  color: #059669;
+  font-weight: bold;
+}
+
+.democomp1-demo .visible-danger {
+  color: #ff0000;
+  font-weight: bold;
+}
