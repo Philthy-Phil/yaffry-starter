@@ -1,5 +1,20 @@
 # YAFFRY-STARTER
 
+## 1. Create a GitHub Personal Access Token
+
+- Go to github.com/settings/tokens and generate a Personal Access Token with at least the `read:packages` scope.
+
+## 2. Configure `.npmrc`
+
+- Create a `.npmrc` file in your home directory (`~/.npmrc`) or in the project directory with the following content:
+
+   ```sh
+   @philthy-phil:registry=https://npm.pkg.github.com/
+   //npm.pkg.github.com/:_authToken=<GITHUB_TOKEN>
+   ```
+
+---
+
 ## Welcome to Yaffry 🚀
 
 **Yaffry** is your lightweight, component-based framework for modern web apps
