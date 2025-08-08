@@ -11,3 +11,25 @@ body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    padding: 6rem 0;
+}
+
+footer {
+    background-color: #100222;
+    padding: 6rem 2rem;
+    text-align:center;
+    color:#777;
+    font-size:0.9em;
+    margin-top:2em;
+
+    & p {
+        color: cyan;
+    }
+
+    & a {
+        text-decoration: none;
+        color: #aaa;
+    }
+}

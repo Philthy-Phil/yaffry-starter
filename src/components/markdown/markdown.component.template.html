@@ -11,51 +11,51 @@
     <div class="language-badge">Markdown</div>
 
     <pre class="code-field">
-<span class="markdown-heading-1"># Willkommen bei Yaffry 🚀</span>
+<span class="markdown-heading-1"># Welcome to Yaffry 🚀</span>
 
-<span class="markdown-bold">**Yaffry**</span> ist dein leichtgewichtiges, komponentenbasiertes Framework für moderne Web-Apps
-– inspiriert von Angular, React & Vue, aber mit eigenem Twist!
+<span class="markdown-bold">**Yaffry**</span> is your lightweight, component-based framework for modern web apps
+– inspired by Angular, React & Vue, but with an own twist!
 
 ---
 
 <span class="markdown-heading-2">## Quickstart</span>
 
-- <span class="markdown-bold">**Entwicklungsserver starten:**</span>
+- <span class="markdown-bold">**Start Dev-Server:**</span>
   ```bash
   <span class="markdown-code-snippet">npm run dev</span>
   ```
-- <span class="markdown-bold">**Build für Produktion:**</span>
+- <span class="markdown-bold">**Build Production-Code:**</span>
   ```bash
   <span class="markdown-code-snippet">npm run build</span>
   ```
-- <span class="markdown-bold">**Neue Komponente anlegen:**</span> 
+- <span class="markdown-bold">**Create new component:**</span> 
   ```bash
   <span class="markdown-code-snippet">npx yaff create component MyAwesomeOne</span>
   ```
-- <span class="markdown-bold">**Neuen Service anlegen:**</span>
+- <span class="markdown-bold">**Create new service:**</span>
   ```bash
   <span class="markdown-code-snippet">npx yaff create service MyFancyOne</span>
   ```
 
 ---
 
-<span class="markdown-heading-2">## Projektstruktur</span>
+<span class="markdown-heading-2">## Project Structure</span>
 
-- <span class="markdown-bold">**src/components/**</span> – Deine Komponenten (jede im eigenen Ordner)
-- <span class="markdown-bold">**src/services/**</span>   – Globale Services (z.B. für State, API)
-- <span class="markdown-bold">**src/routes/**</span>     – Routen-Definitionen
-- <span class="markdown-bold">**public/**</span>         – Statische Assets (Bilder, Icons, ...)
-- <span class="markdown-bold">**scripts/yaff.js**</span> – CLI für Komponenten/Services
+- <span class="markdown-bold">**src/components/**</span> – Your components (each in its own folder)
+- <span class="markdown-bold">**src/services/**</span>   – Global services (z.B. for State, API)
+- <span class="markdown-bold">**src/routes/**</span>     – Route-definitions
+- <span class="markdown-bold">**public/**</span>         – Static assets (images, icons, ...)
+- <span class="markdown-bold">**scripts/yaff.js**</span> – CLI for components/services
 
 ---
 
-<span class="markdown-heading-2">## Komponenten</span>
+<span class="markdown-heading-2">## Components</span>
 
-- Jede Komponente besteht aus:
-  - <span class="markdown-code-snippet">`.component.ts`</span> (Klasse mit Decorator)
+- Each Component consits of:
+  - <span class="markdown-code-snippet">`.component.ts`</span> (Class with decorator)
   - <span class="markdown-code-snippet">`.component.template.html`</span> (Template)
   - <span class="markdown-code-snippet">`.component.style.css`</span> (Styles)
-- Beispiel:
+- Example:
   ```ts
   <span class="keyword">@YComponent</span><span class="parenthesis">(</span><span class="braces">{</span>
     selector: <span class="string">'my-comp'</span>,
@@ -69,8 +69,8 @@
 
 <span class="markdown-heading-2">## Services</span>
 
-- Schreibe globale Logik/State in Services.
-- Beispiel:
+- Write global Logic/State in services.
+- Example:
   ```ts
   <span class="keyword">export class</span> <span class="class">CounterService</span> <span class="keyword">extends</span> <span class="class">Service</span> <span class="braces">{</span> ... <span class="braces">}</span>
   <span class="keyword">export const</span> counterService = <span class="class">ReactiveSystem</span>.makeReactive<span class="parenthesis">(</span><span class="keyword">new</span> <span class="class">CounterService</span>()<span class="parenthesis">)</span>;
@@ -80,41 +80,41 @@
 
 <span class="markdown-heading-2">## Routing</span>
 
-- Definiere Routen in <span class="markdown-code-snippet">`src/routes/routes.config.ts`</span>
-- Nutze <span class="markdown-code-snippet">`&lt;router-outlet&gt;&lt;/router-outlet&gt;`</span> im Template
+- Define routes in <span class="markdown-code-snippet">`src/routes/routes.config.ts`</span>
+- Use <span class="markdown-code-snippet">`&lt;router-outlet&gt;&lt;/router-outlet&gt;`</span> in template
 
 ---
 
 <span class="markdown-heading-2">## Tipps</span>
 
-- <span class="markdown-bold">**Live-Reload:**</span> Änderungen an Komponenten werden sofort übernommen.
-- <span class="markdown-bold">**Eigene Pipes/Directives:**</span> Siehe Framework-API.
+- <span class="markdown-bold">**Live-Reload:**</span> Changes on components are instantly processed.
+- <span class="markdown-bold">**Custom Pipes/Directives:**</span> Look Framework-API.
 - <span class="markdown-bold">**Lifecycle-Hooks:**</span> <span class="markdown-code-snippet">`onInit`</span>, <span class="markdown-code-snippet">`onUpdate`</span>, <span class="markdown-code-snippet">`onDestroy`</span> in Komponenten nutzen.
-- <span class="markdown-bold">**Styles:**</span> Component-Styles werden automatisch geladen (siehe Import in <span class="markdown-code-snippet">`.component.ts`</span>).
+- <span class="markdown-bold">**Styles:**</span> Component-Styles are loaded automatically (see import in <span class="markdown-code-snippet">`.component.ts`</span>).
 
 ---
 
-<span class="markdown-heading-2">## Nützliche Befehle</span>
+<span class="markdown-heading-2">## Usefull commands</span>
 
-- <span class="markdown-code-snippet">`npm run dev`</span> – Entwicklungsserver starten
-- <span class="markdown-code-snippet">`npx yaff create component &lt;Name&gt;`</span> – Neue Komponente 
-- <span class="markdown-code-snippet">`npx yaff create service &lt;Name&gt;`</span> – Neuer Service
+- <span class="markdown-code-snippet">`npm run dev`</span> – start dev server
+- <span class="markdown-code-snippet">`npx yaff create component &lt;Name&gt;`</span> – new component 
+- <span class="markdown-code-snippet">`npx yaff create service &lt;Name&gt;`</span> – new service
 
 ---
 
-<span class="markdown-heading-2">## Mehr erfahren</span>
+<span class="markdown-heading-2">## More infos</span>
 
 - [Yaffry GitHub](<a href="#" class="markdown-link">https://github.com/philthy-phil/yaffry</a>)  
-- [README im Projekt](<a href="#" class="markdown-link">./README.md</a>)  
+- [README in project](<a href="#" class="markdown-link">./README.md</a>)  
 - [Framework-API](<a href="#" class="markdown-link">./docs/</a>)
 
 ---
 
-<span class="markdown-bold">**Viel Spaß beim Entwickeln mit Yaffry! 🎉**</span>
+<span class="markdown-bold">**Have fun developing with Yaffry! 🎉**</span>
 
 ---
 
-<span class="markdown-bold">**Find an Example-Demo here:** <a href="/democomp1" class="markdown-link">Yaffry Demo</a></span>
+<span class="markdown-bold">**Find an Example-Demo here:** <a y-link="/democomp1" class="markdown-link">Yaffry Demo</a></span>
 </pre>
 
 <!-- <span class="comment">// TODO: Add README Documentation here!</span> -->

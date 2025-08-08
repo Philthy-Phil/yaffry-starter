@@ -12,6 +12,17 @@
 
   <hr>
   
+  <div>
+    <p>Random Pokémon:</p>
+    <div y-if="someApiData">
+      <strong>{{ pokemonName | uppercase }}</strong><br>
+      <img src="{{ pokemonImage }}" alt="{{ pokemonName }}" width="150" height="150" />
+    </div>
+    <div y-if="!someApiData">
+      <em>Loading...</em>
+    </div>
+  </div>
+
   <button y-link="/democomp1">Back to Demo-Page-1</button>
   <button y-link="/">Back Home</button>
 </div>

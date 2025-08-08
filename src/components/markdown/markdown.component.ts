@@ -7,7 +7,13 @@ import './markdown.component.style.css';
   styleUrls: ['./markdown.component.style.css']
 })
 export class MarkDownComponent extends Component {
-  onInit() {}
-  onUpdate() {}
-  onDestroy() {}
+  onInit() {
+    // console.log('MarkDownComponent onInit');
+  }
+  onUpdate() {
+    // console.log('MarkDownComponent onUpdate');
+  }
+  onDestroy() {
+    // console.log('MarkDownComponent onDestroy');
+  }
 }
