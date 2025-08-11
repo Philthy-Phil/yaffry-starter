@@ -1,6 +1,6 @@
 {
   "name": "yaffry-starter",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "private": true,
   "type": "module",
   "bin": {
@@ -13,7 +13,7 @@
     "yaff": "node ./scripts/yaff.js"
   },
   "dependencies": {
-    "@philthy-phil/yaffry": "1.0.12"
+    "@philthy-phil/yaffry": "1.0.13"
   },
   "devDependencies": {
     "@types/node": "^24.0.14",
