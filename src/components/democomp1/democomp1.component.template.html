@@ -2,14 +2,14 @@
   <h2>Demo Component 1</h2>
 
   <hr>
-  
+
   <div>
     <p>Local Count</p>
     <button y-click="decrement">-</button>
     <button y-click="increment">+</button>
     <span>({{ count }})</span>
   </div>
-  
+
   <hr>
 
   <div y-if="count > 0" class="visible-success">
@@ -28,13 +28,13 @@
     <button y-click="useServiceInc">+</button>
     <span>({{ counterService.count }})</span>
   </div>
-  
+
   <hr>
 
   <div>
     <input type="text" y-model="inputValue" placeholder="New item" />
     <button y-click="addItem">Add Item</button>
-    
+
     <div>
       <ul>
         <li y-if="items.length === 0">
@@ -49,12 +49,12 @@
   </div>
 
   <hr>
-  
+
   <div>
     <button y-click="toggleShow">Toggle Show</button>
     <div y-show="show">This is only visible, if show=true!</div>
   </div>
-    
+
   <hr>
 
   <button y-link="/democomp2">To Demo-Page-2</button>

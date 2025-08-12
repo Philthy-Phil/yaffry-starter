@@ -35,12 +35,9 @@ export class Democomp2Component extends Component {
     }
   }
 
-  onUpdate() {
-    console.log('Democomp2Component onUpdate');
-  }
-  onDestroy() {
-    console.log('Democomp2Component onDestroy');
-  }
+  onUpdate() { }
+  onDestroy() { }
+  
   useServiceInc() {
     counterService.increment();
   }

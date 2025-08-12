@@ -11,19 +11,15 @@ import './democomp1.component.style.css';
     inputValue: '',
     items: ['eins', 'zwei', 'drei'],
     show: true,
-    counterService
+    counterService: counterService,
   })
 })
 export class Democomp1Component extends Component {
-  onInit() {
-    // console.log('Democomp1Component onInit');
-  }
-  onUpdate() {
-    // console.log('Democomp1Component onUpdate');
-  }
-  onDestroy() {
-    // console.log('Democomp1Component onDestroy');
-  }
+  
+  onInit() { }
+  onUpdate() { }
+  onDestroy() { }
+
   increment() {
     this.data.count++;
   }
@@ -31,12 +27,11 @@ export class Democomp1Component extends Component {
     this.data.count--;
   }
   addItem() {
-    this.data.items.push(this.data.inputValue || 'neu');
+    this.data.items.push(this.data.inputValue || 'new item');
     this.data.inputValue = '';
   }
   removeItem(index: number) {
-    // console.log('Removing item at index:', index);
-    this.data.items.splice(index, 1);
+    this.data.items = this.data.items.filter((_: any, i: number) => i !== index);
   }
   toggleShow() {
     this.data.show = !this.data.show;
