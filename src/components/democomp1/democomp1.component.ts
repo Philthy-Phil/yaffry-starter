@@ -16,30 +16,38 @@ import './democomp1.component.style.css';
 })
 export class Democomp1Component extends Component {
   
-  onInit() { }
-  onUpdate() { }
-  onDestroy() { }
+  onInit(): void { }
+  onUpdate(): void { }
+  onDestroy(): void { }
 
-  increment() {
+  increment(): void {
     this.data.count++;
   }
-  decrement() {
+
+  decrement(): void {
     this.data.count--;
   }
-  addItem() {
-    this.data.items.push(this.data.inputValue || 'new item');
+
+  addItem(): void {
+    this.data.items.push(this.data.inputValue || 'neu');
     this.data.inputValue = '';
   }
-  removeItem(index: number) {
-    this.data.items = this.data.items.filter((_: any, i: number) => i !== index);
+
+  removeItem(index: number): void {   
+    const newItems = [...this.data.items];
+    newItems.splice(index, 1);
+    this.data.items = newItems;  
   }
-  toggleShow() {
+
+  toggleShow(): void {
     this.data.show = !this.data.show;
   }
-  useServiceInc() {
+
+  useServiceInc(): void {
     counterService.increment();
   }
-  useServiceDec() {
+  
+  useServiceDec(): void {
     counterService.decrement();
   }
 }

@@ -10,12 +10,11 @@ import './democomp2.component.style.css';
     someApiData: null,
     pokemonName: null,
     pokemonImage: null,
-    counterService
+    counterService: counterService,
   })
 })
 export class Democomp2Component extends Component {
-  onInit() {
-    console.log('Democomp2Component onInit');
+  onInit(): void {
     this.loadSampleData();
   }
 
@@ -35,13 +34,13 @@ export class Democomp2Component extends Component {
     }
   }
 
-  onUpdate() { }
-  onDestroy() { }
+  onUpdate(): void { }
+  onDestroy(): void { }
   
-  useServiceInc() {
+  useServiceInc(): void {
     counterService.increment();
   }
-  useServiceDec() {
+  useServiceDec(): void {
     counterService.decrement();
   }
 }

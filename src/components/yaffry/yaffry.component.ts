@@ -11,16 +11,8 @@ import { Component, YComponent } from '@philthy-phil/yaffry';
 })
 export class YaffryComponent extends Component {
 
-  onInit() {
-    // TODO when initialized
-  }
-
-  onUpdate() {
-    // TODO when updated
-  }
-  onDestroy() {
-    // TODO when destroyed
-  }
-  
+  onInit(): void { }
+  onUpdate(): void { }
+  onDestroy(): void  { }
 
 } 

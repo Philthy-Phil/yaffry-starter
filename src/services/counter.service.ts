@@ -1,8 +1,8 @@
 import { Service, ReactiveSystem } from '@philthy-phil/yaffry';
 
 export class CounterService extends Service {
-  count = 0;
-  increment() { this.count++; }
-  decrement() { this.count--; }
+  count: number = 0;
+  increment(): void { this.count++; }
+  decrement(): void { this.count--; }
 }
 export const counterService = ReactiveSystem.makeReactive(new CounterService());
