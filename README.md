@@ -124,3 +124,11 @@
 ---
 
 **Have fun developing with Yaffry! 🎉**
+
+
+
+## 4. Internal Process
+
+- new version in package.json corresponding to latest yaffry version
+- `rm -rf node_modules package-lock.json`
+- `npm install`
